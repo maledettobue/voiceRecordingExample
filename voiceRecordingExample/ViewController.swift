@@ -42,6 +42,7 @@ class ViewController: UIViewController,AVAudioRecorderDelegate {
     // MARK - Record/Play methods
     private func record(){
         
+        // audio player could be playing when I decide to record
         if((self.audioPlayer != nil) && self.audioPlayer.isPlaying){
             self.audioPlayer.stop()
             self.audioPlayer = nil
